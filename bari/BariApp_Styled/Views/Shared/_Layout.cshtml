@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BariApp 🐶</title>
+    <style>
+        body {
+            background-color: #f5f0e6;
+            font-family: Arial, sans-serif;
+            color: #3e2f1c;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #d2b48c;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        h2, h3 {
+            color: #5b3a1b;
+        }
+
+        img {
+            border: 2px solid #d2b48c;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        div {
+            margin-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a asp-area="" asp-controller="Dogs" asp-action="Index">🐾 Бари</a></li>
+        </ul>
+    </nav>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+@model IEnumerable<BariApp.Models.Dog>
+
+<h2>Запознай се с Бари</h2>
+
+@foreach (var dog in Model)
+{
+    <div>
+        <h3>@dog.Name</h3>
+        <img src="@dog.PhotoUrl" alt="Снимка на @dog.Name" width="300" />
+        <p><strong>Възраст:</strong> @dog.Age</p>
+        <p><strong>Порода:</strong> @dog.Breed</p>
+        <p><strong>Произход:</strong> @dog.Country</p>
+        <p>@dog.Description</p>
+    </div>
+}
